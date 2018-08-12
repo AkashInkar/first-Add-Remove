@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Fragment.NotificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lblAndNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/MTop"
+            android:text="Android:"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold"
+
+            />
+
+        <ImageView
+            android:id="@+id/imgriz"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/lblAndNoti"
+            android:src="@drawable/riz" />
+
+        <ImageView
+            android:id="@+id/imgchai"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imgriz"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/lblAndNoti"
+            android:src="@drawable/akk" />
+
+        <TextView
+            android:id="@+id/lblRiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgriz"
+            android:text="Rizwan Sir"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblchai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblRiz"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imgchai"
+            android:text="Chaitali Mam"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbbriz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblRiz"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/lblRiz" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblchai"
+            android:layout_below="@+id/cbbriz"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/lblchai" />
+
+        <TextView
+            android:id="@+id/lblAJSNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblAndNoti"
+            android:layout_marginTop="100dp"
+            android:text="Angular:"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_txt"
+            android:layout_below="@id/lblchai">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/img_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lblAJSNoti"
+            android:layout_below="@id/lblchai">
+            <ImageView
+                android:id="@+id/imgRit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/MarLeft"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/akk" />
+
+            <TextView
+                android:id="@+id/lblRit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MarLeft"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/imgRit"
+                android:text="Rituraj Sir"
+                android:textSize="@dimen/txtSize"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imgvai"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/imgRit"
+                android:layout_marginLeft="@dimen/MarLeft"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/akk" />
+
+            <TextView
+                android:id="@+id/lblvai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgRit"
+                android:layout_marginLeft="@dimen/MarLeft"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imgRit"
+                android:text="Vaibhav Sir"
+                android:textSize="@dimen/txtSize"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imgdev"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/imgvai"
+                android:layout_marginLeft="@dimen/MarLeft"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/akk" />
+
+            <TextView
+                android:id="@+id/lbldev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgvai"
+                android:layout_marginLeft="@dimen/MarLeft"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imgdev"
+                android:text="Dev Sir"
+                android:textSize="@dimen/txtSize"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

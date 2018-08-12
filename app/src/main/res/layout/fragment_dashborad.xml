@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Fragment.DashboradFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgan"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/an" />
+
+        <TextView
+            android:id="@+id/lblAnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgan"
+            android:text="Android"
+            android:textStyle="bold"
+            android:textSize="@dimen/txtSize" />
+
+        <ImageView
+            android:id="@+id/imgjs"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/js" />
+
+        <TextView
+            android:id="@+id/lblAngular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/imgjs"
+            android:layout_below="@+id/imgjs"
+            android:layout_alignParentRight="true"
+            android:text="AngularJS"
+            android:textSize="@dimen/txtSize" />
+        <ImageView
+            android:id="@+id/imgios"
+            android:layout_marginTop="@dimen/MTop"
+            android:layout_width="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lblAnd"
+            android:layout_height="110dp"
+            android:src="@drawable/ios"/>
+        <TextView
+            android:id="@+id/lblios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IOS"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold"
+            android:layout_below="@+id/imgios"/>
+        <ImageView
+            android:id="@+id/imgiot"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/iot"
+            android:layout_below="@+id/lblAngular"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/lbliot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IOT"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold"
+            android:layout_below="@id/imgiot"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_marginTop="@dimen/MTop"
+            android:id="@+id/imgui"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ui"
+            android:layout_below="@+id/lblios"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/txtSize"
+
+            android:text="UI"
+            android:layout_below="@+id/imgui"/>
+        <ImageView
+            android:id="@+id/imgswt"
+            android:layout_marginTop="@dimen/MTop"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/swt"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lbliot"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgswt"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:text="Software Testing"/>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

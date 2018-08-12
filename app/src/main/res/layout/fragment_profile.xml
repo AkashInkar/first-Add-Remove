@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Fragment.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/lblImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/aaa" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/MTop"
+            android:text="Akash Inkar"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/lblAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/MTop"
+            android:text="Wagholi"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/lblContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblAdd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/MTop"
+            android:text="9763767218"
+            android:textStyle="bold"
+            android:textSize="@dimen/txtSize" />
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
